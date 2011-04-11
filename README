@@ -1,0 +1,60 @@
+This is an example of using JMockit with custom/inherited expectations.
+
+The tests all pass when run from within my IDE, IDEA.
+
+But when run via ant, RealTest1.aNoddyTest3 fails, with a NullPointerException
+
+
+Chris-Kimptons-MacBook-Air:jmock-exp-inheritance kimptoc$ ant -f jmock-exp-inheritance.xml all-tests
+Buildfile: /Users/kimptoc/Documents/java/jmock-exp-inheritance/jmock-exp-inheritance.xml
+
+init:
+
+clean.module.jmock-exp-inheritance:
+   [delete] Deleting directory /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+
+clean:
+
+compile.module.jmock-exp-inheritance.production:
+    [mkdir] Created dir: /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+    [javac] /Users/kimptoc/Documents/java/jmock-exp-inheritance/jmock-exp-inheritance.xml:136: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+
+compile.module.jmock-exp-inheritance.tests:
+
+compile.module.jmock-exp-inheritance:
+
+build.modules:
+
+tests1:
+
+tests1:
+   [testng] [TestNG] Running:
+   [testng]   Ant suite
+   [testng] 
+   [testng] 
+   [testng] ===============================================
+   [testng] Ant suite
+   [testng] Total tests run: 4, Failures: 1, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] The tests failed.
+
+tests2:
+
+tests2:
+   [testng] [TestNG] Running:
+   [testng]   Ant suite
+   [testng] 
+   [testng] 
+   [testng] ===============================================
+   [testng] Ant suite
+   [testng] Total tests run: 4, Failures: 0, Skips: 0
+   [testng] ===============================================
+   [testng] 
+
+all-tests:
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+
