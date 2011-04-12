@@ -5,56 +5,76 @@ The tests all pass when run from within my IDE, IDEA.
 But when run via ant, RealTest1.aNoddyTest3 fails, with a NullPointerException
 
 
-Chris-Kimptons-MacBook-Air:jmock-exp-inheritance kimptoc$ ant -f jmock-exp-inheritance.xml all-tests
-Buildfile: /Users/kimptoc/Documents/java/jmock-exp-inheritance/jmock-exp-inheritance.xml
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/bin/java -Xmx128m -Xss2m -Dant.home=/Applications/IntelliJ IDEA 10.app/lib/ant -Dfile.encoding=MacRoman -classpath /System/Library/Java/Support/Deploy.bundle/Contents/Resources/Java/deploy.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/dt.jar:/System/Library/Java/Support/Deploy.bundle/Contents/Resources/Java/javaws.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/management-agent.jar:/System/Library/Java/Support/Deploy.bundle/Contents/Resources/Java/plugin.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/sa-jdi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-antlr.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-bcel.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-bsf.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-log4j.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-oro.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-regexp.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-resolver.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-apache-xalan2.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-commons-logging.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-commons-net.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-jai.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-javamail.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-jdepend.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-jmf.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-jsch.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-junit.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-launcher.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-netrexx.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-nodeps.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-swing.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant-testutil.jar:/Applications/IntelliJ IDEA 10.app/lib/ant/lib/ant.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/lib/tools.jar:/Applications/IntelliJ IDEA 10.app/lib/idea_rt.jar com.intellij.rt.ant.execution.AntMain2 -logger com.intellij.rt.ant.execution.IdeaAntLogger2 -inputhandler com.intellij.rt.ant.execution.IdeaInputHandler -buildfile /Users/kimptoc/Documents/java/jmock-exp-inheritance/jmock-exp-inheritance.xml all-tests
+jmock-exp-inheritance.xml
+property
+property
+property
+property
+property
+patternset
+patternset
+patternset
+path
+path
+dirname
+property
+property
+property
+path
+path
+path
+path
+path
+patternset
+patternset
+path
+taskdef
+init
+clean.module.jmock-exp-inheritance
+delete
+Deleting directory /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+delete
+clean
+compile.module.jmock-exp-inheritance.production
+mkdir
+Created dir: /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+javac
+Compiling 6 source files to /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+copy
+compile.module.jmock-exp-inheritance.tests
+compile.module.jmock-exp-inheritance
+build.modules
+tests1
+ant
+taskdef
+tests1
+mkdir
+testng
+[TestNG] Running:
+  Ant suite
 
-init:
 
-clean.module.jmock-exp-inheritance:
-   [delete] Deleting directory /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
+===============================================
+Ant suite
+Total tests run: 4, Failures: 0, Skips: 0
+===============================================
 
-clean:
+tests2
+ant
+taskdef
+tests2
+mkdir
+testng
+[TestNG] Running:
+  Ant suite
 
-compile.module.jmock-exp-inheritance.production:
-    [mkdir] Created dir: /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
-    [javac] /Users/kimptoc/Documents/java/jmock-exp-inheritance/jmock-exp-inheritance.xml:136: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
-    [javac] Compiling 6 source files to /Users/kimptoc/Documents/java/jmock-exp-inheritance/out/production/jmock-exp-inheritance
 
-compile.module.jmock-exp-inheritance.tests:
+===============================================
+Ant suite
+Total tests run: 4, Failures: 0, Skips: 0
+===============================================
 
-compile.module.jmock-exp-inheritance:
+all-tests
 
-build.modules:
-
-tests1:
-
-tests1:
-   [testng] [TestNG] Running:
-   [testng]   Ant suite
-   [testng] 
-   [testng] 
-   [testng] ===============================================
-   [testng] Ant suite
-   [testng] Total tests run: 4, Failures: 1, Skips: 0
-   [testng] ===============================================
-   [testng] 
-   [testng] The tests failed.
-
-tests2:
-
-tests2:
-   [testng] [TestNG] Running:
-   [testng]   Ant suite
-   [testng] 
-   [testng] 
-   [testng] ===============================================
-   [testng] Ant suite
-   [testng] Total tests run: 4, Failures: 0, Skips: 0
-   [testng] ===============================================
-   [testng] 
-
-all-tests:
-
-BUILD SUCCESSFUL
-Total time: 11 seconds
-
+Ant build completed successfully in 11s at 12/04/2011 10:55
