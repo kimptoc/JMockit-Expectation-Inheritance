@@ -42,7 +42,7 @@ public class AbstractTest {
             {
                 mockStuff.foobar();
                 returns("hello");
-                mockThing.newOne();
+                mockStuff.newOne();
                 result = mockWidget;
             }
         };
