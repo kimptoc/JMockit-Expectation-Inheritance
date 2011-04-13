@@ -1,8 +1,12 @@
 package tests;
 
+import mockit.NonStrict;
+import mockit.Verifications;
 import org.testng.annotations.Test;
+import work.IAnother;
 import work.IThing;
 import work.Widget;
+import work.XWidget;
 
 /**
  * Created by IntelliJ IDEA.
@@ -12,6 +16,9 @@ import work.Widget;
  * To change this template use File | Settings | File Templates.
  */
 public class RealTest2 extends AbstractTest {
+
+    @NonStrict
+    IAnother mockAnother;
 
     @Test
     public void aNoddyTest()
@@ -46,4 +53,23 @@ public class RealTest2 extends AbstractTest {
         assert s.jiggery().equals("stuff") : "found stuff?";
     }
 
+    @Test
+    public void verifyTest()
+    {
+        XWidget w = new XWidget();
+        w.go(mockAnother);
+
+        try {
+            Thread.sleep(250);
+        } catch (InterruptedException e) {
+            //ignored
+        }
+
+        new Verifications()
+        {
+            {
+                mockAnother.yetMore(); times = 1;
+            }
+        };
+    }
 }
